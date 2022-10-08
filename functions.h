@@ -1,7 +1,3 @@
-//
-// Created by user on 06.10.22.
-//
-
 #ifndef OOP2_FUNCTIONS_H
 #define OOP2_FUNCTIONS_H
 using namespace std;
@@ -13,20 +9,19 @@ namespace oop2 {
         double a;
 
     public:
-        //Nefroida(double a1 = 1) : a(a1) {};
-        Nefroida(){
-            a = 1;
-        }
+        Nefroida(double a1 = 1) : a(a1) {};
+        //Nefroida(){
+        //    a = 1;
+        //}
 
         double get_r() const;
         void set_r(double a1);
-        double length();
-        double radius(double t);
-        //значения x И y в зависимости от параметра  t
-        double y_param(double fi);
-        double x_param(double fi);
-        double area();
-        string equation();
+        double length()const;
+        double radius(double t)const;
+        double y_param(double fi)const;
+        double x_param(double fi)const;
+        double area()const;
+        string equation()const;
 
     };
 
